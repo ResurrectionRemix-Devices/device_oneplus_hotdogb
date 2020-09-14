@@ -14,6 +14,9 @@ $(call inherit-product, device/oneplus/hotdogb/device.mk)
 # Inherit some common RR stuff.
 $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
+# Inherit Google Play System Update stuff
+$(call inherit-product-if-exists, vendor/google/psu/google-psu.mk)
+
 # Inherit PixelGApps
 $(call inherit-product, vendor/pixelgapps/pixel-gapps.mk)
 
