@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/hotdogb/device.mk)
 
 # Inherit some common RR stuff.
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit Google Play System Update stuff
 $(call inherit-product-if-exists, vendor/google/psu/google-psu.mk)
