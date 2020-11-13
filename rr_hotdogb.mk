@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from hotdogb device
 $(call inherit-product, device/oneplus/hotdogb/device.mk)
 
-# Inherit some common RR stuff.
+# Inherit some common PixelExperience stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit Google Play System Update stuff
@@ -21,7 +21,7 @@ $(call inherit-product-if-exists, vendor/google/psu/google-psu.mk)
 $(call inherit-product, vendor/gapps/gapps.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := rr_hotdogb
+PRODUCT_NAME := aosp_hotdogb
 PRODUCT_DEVICE := hotdogb
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := OnePlus 7T
